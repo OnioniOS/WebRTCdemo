@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58927CDD221BFDDC00900CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58927CDC221BFDDC00900CD9 /* Assets.xcassets */; };
+		58927CE0221BFDDC00900CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58927CDE221BFDDC00900CD9 /* LaunchScreen.storyboard */; };
+		58927CE3221BFDDC00900CD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927CE2221BFDDC00900CD9 /* main.m */; };
+		58927CEB221BFDFD00900CD9 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 58927CEA221BFDFD00900CD9 /* libicucore.tbd */; };
+		58927D0C221BFE1F00900CD9 /* WebRTCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927CED221BFE1F00900CD9 /* WebRTCHelper.m */; };
+		58927D0D221BFE1F00900CD9 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927CF1221BFE1F00900CD9 /* SRWebSocket.m */; };
+		58927D0E221BFE1F00900CD9 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58927CF5221BFE1F00900CD9 /* WebRTC.framework */; };
+		58927D0F221BFE1F00900CD9 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927CFA221BFE1F00900CD9 /* MJPropertyType.m */; };
+		58927D10221BFE1F00900CD9 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927CFD221BFE1F00900CD9 /* NSObject+MJKeyValue.m */; };
+		58927D11221BFE1F00900CD9 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927CFE221BFE1F00900CD9 /* MJProperty.m */; };
+		58927D12221BFE1F00900CD9 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D00221BFE1F00900CD9 /* NSObject+MJCoding.m */; };
+		58927D13221BFE1F00900CD9 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D02221BFE1F00900CD9 /* MJExtensionConst.m */; };
+		58927D14221BFE1F00900CD9 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D03221BFE1F00900CD9 /* NSObject+MJProperty.m */; };
+		58927D15221BFE1F00900CD9 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D05221BFE1F00900CD9 /* NSObject+MJClass.m */; };
+		58927D16221BFE1F00900CD9 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D06221BFE1F00900CD9 /* NSString+MJExtension.m */; };
+		58927D17221BFE1F00900CD9 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D07221BFE1F00900CD9 /* MJPropertyKey.m */; };
+		58927D18221BFE1F00900CD9 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D0B221BFE1F00900CD9 /* MJFoundation.m */; };
+		58927D1F221BFE2800900CD9 /* ChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D19221BFE2800900CD9 /* ChatController.m */; };
+		58927D20221BFE2800900CD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D1C221BFE2800900CD9 /* AppDelegate.m */; };
+		58927D21221BFE2800900CD9 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58927D1D221BFE2800900CD9 /* RootController.m */; };
+		58927D23221C132400900CD9 /* WebRTC.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58927CF5221BFE1F00900CD9 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58927D25221C13A100900CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58927D24221C13A100900CD9 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58927D22221C131B00900CD9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				58927D23221C132400900CD9 /* WebRTC.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58927CD0221BFDDB00900CD9 /* RTCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58927CDC221BFDDC00900CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58927CDF221BFDDC00900CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58927CE1221BFDDC00900CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58927CE2221BFDDC00900CD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58927CEA221BFDFD00900CD9 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		58927CED221BFE1F00900CD9 /* WebRTCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRTCHelper.m; sourceTree = "<group>"; };
+		58927CEE221BFE1F00900CD9 /* WebRTCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRTCHelper.h; sourceTree = "<group>"; };
+		58927CF1221BFE1F00900CD9 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		58927CF2221BFE1F00900CD9 /* SocketRocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRocket.h; sourceTree = "<group>"; };
+		58927CF3221BFE1F00900CD9 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		58927CF5221BFE1F00900CD9 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		58927CF7221BFE1F00900CD9 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		58927CF8221BFE1F00900CD9 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		58927CF9221BFE1F00900CD9 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		58927CFA221BFE1F00900CD9 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		58927CFB221BFE1F00900CD9 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		58927CFC221BFE1F00900CD9 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		58927CFD221BFE1F00900CD9 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		58927CFE221BFE1F00900CD9 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		58927CFF221BFE1F00900CD9 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		58927D00221BFE1F00900CD9 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		58927D01221BFE1F00900CD9 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		58927D02221BFE1F00900CD9 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		58927D03221BFE1F00900CD9 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		58927D04221BFE1F00900CD9 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		58927D05221BFE1F00900CD9 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		58927D06221BFE1F00900CD9 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		58927D07221BFE1F00900CD9 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		58927D08221BFE1F00900CD9 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		58927D09221BFE1F00900CD9 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		58927D0A221BFE1F00900CD9 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		58927D0B221BFE1F00900CD9 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		58927D19221BFE2800900CD9 /* ChatController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatController.m; sourceTree = "<group>"; };
+		58927D1A221BFE2800900CD9 /* RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
+		58927D1B221BFE2800900CD9 /* ChatController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatController.h; sourceTree = "<group>"; };
+		58927D1C221BFE2800900CD9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58927D1D221BFE2800900CD9 /* RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
+		58927D1E221BFE2800900CD9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58927D24221C13A100900CD9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58927CCD221BFDDB00900CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58927CEB221BFDFD00900CD9 /* libicucore.tbd in Frameworks */,
+				58927D0E221BFE1F00900CD9 /* WebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58927CC7221BFDDB00900CD9 = {
+			isa = PBXGroup;
+			children = (
+				58927CD2221BFDDB00900CD9 /* RTCDemo */,
+				58927CD1221BFDDB00900CD9 /* Products */,
+				58927CE9221BFDFD00900CD9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58927CD1221BFDDB00900CD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58927CD0221BFDDB00900CD9 /* RTCDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58927CD2221BFDDB00900CD9 /* RTCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				58927CEC221BFE1F00900CD9 /* Helper */,
+				58927CEF221BFE1F00900CD9 /* Vendor */,
+				58927D1E221BFE2800900CD9 /* AppDelegate.h */,
+				58927D1C221BFE2800900CD9 /* AppDelegate.m */,
+				58927D1B221BFE2800900CD9 /* ChatController.h */,
+				58927D19221BFE2800900CD9 /* ChatController.m */,
+				58927D1A221BFE2800900CD9 /* RootController.h */,
+				58927D1D221BFE2800900CD9 /* RootController.m */,
+				58927D24221C13A100900CD9 /* Main.storyboard */,
+				58927CDC221BFDDC00900CD9 /* Assets.xcassets */,
+				58927CDE221BFDDC00900CD9 /* LaunchScreen.storyboard */,
+				58927CE1221BFDDC00900CD9 /* Info.plist */,
+				58927CE2221BFDDC00900CD9 /* main.m */,
+			);
+			path = RTCDemo;
+			sourceTree = "<group>";
+		};
+		58927CE9221BFDFD00900CD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58927CEA221BFDFD00900CD9 /* libicucore.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58927CEC221BFE1F00900CD9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				58927CED221BFE1F00900CD9 /* WebRTCHelper.m */,
+				58927CEE221BFE1F00900CD9 /* WebRTCHelper.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		58927CEF221BFE1F00900CD9 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				58927CF0221BFE1F00900CD9 /* SocketRocket-0.5.1 */,
+				58927CF4221BFE1F00900CD9 /* WebRTC */,
+				58927CF6221BFE1F00900CD9 /* MJExtension-3.0.13 */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		58927CF0221BFE1F00900CD9 /* SocketRocket-0.5.1 */ = {
+			isa = PBXGroup;
+			children = (
+				58927CF1221BFE1F00900CD9 /* SRWebSocket.m */,
+				58927CF2221BFE1F00900CD9 /* SocketRocket.h */,
+				58927CF3221BFE1F00900CD9 /* SRWebSocket.h */,
+			);
+			path = "SocketRocket-0.5.1";
+			sourceTree = "<group>";
+		};
+		58927CF4221BFE1F00900CD9 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				58927CF5221BFE1F00900CD9 /* WebRTC.framework */,
+			);
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		58927CF6221BFE1F00900CD9 /* MJExtension-3.0.13 */ = {
+			isa = PBXGroup;
+			children = (
+				58927CF7221BFE1F00900CD9 /* MJPropertyKey.h */,
+				58927CF8221BFE1F00900CD9 /* NSObject+MJClass.h */,
+				58927CF9221BFE1F00900CD9 /* NSString+MJExtension.h */,
+				58927CFA221BFE1F00900CD9 /* MJPropertyType.m */,
+				58927CFB221BFE1F00900CD9 /* NSObject+MJProperty.h */,
+				58927CFC221BFE1F00900CD9 /* MJExtensionConst.h */,
+				58927CFD221BFE1F00900CD9 /* NSObject+MJKeyValue.m */,
+				58927CFE221BFE1F00900CD9 /* MJProperty.m */,
+				58927CFF221BFE1F00900CD9 /* MJFoundation.h */,
+				58927D00221BFE1F00900CD9 /* NSObject+MJCoding.m */,
+				58927D01221BFE1F00900CD9 /* MJExtension.h */,
+				58927D02221BFE1F00900CD9 /* MJExtensionConst.m */,
+				58927D03221BFE1F00900CD9 /* NSObject+MJProperty.m */,
+				58927D04221BFE1F00900CD9 /* MJPropertyType.h */,
+				58927D05221BFE1F00900CD9 /* NSObject+MJClass.m */,
+				58927D06221BFE1F00900CD9 /* NSString+MJExtension.m */,
+				58927D07221BFE1F00900CD9 /* MJPropertyKey.m */,
+				58927D08221BFE1F00900CD9 /* MJProperty.h */,
+				58927D09221BFE1F00900CD9 /* NSObject+MJKeyValue.h */,
+				58927D0A221BFE1F00900CD9 /* NSObject+MJCoding.h */,
+				58927D0B221BFE1F00900CD9 /* MJFoundation.m */,
+			);
+			path = "MJExtension-3.0.13";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58927CCF221BFDDB00900CD9 /* RTCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58927CE6221BFDDC00900CD9 /* Build configuration list for PBXNativeTarget "RTCDemo" */;
+			buildPhases = (
+				58927CCC221BFDDB00900CD9 /* Sources */,
+				58927CCD221BFDDB00900CD9 /* Frameworks */,
+				58927CCE221BFDDB00900CD9 /* Resources */,
+				58927D22221C131B00900CD9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTCDemo;
+			productName = RTCDemo;
+			productReference = 58927CD0221BFDDB00900CD9 /* RTCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58927CC8221BFDDB00900CD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = com.youpin;
+				TargetAttributes = {
+					58927CCF221BFDDB00900CD9 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 58927CCB221BFDDB00900CD9 /* Build configuration list for PBXProject "RTCDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58927CC7221BFDDB00900CD9;
+			productRefGroup = 58927CD1221BFDDB00900CD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58927CCF221BFDDB00900CD9 /* RTCDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58927CCE221BFDDB00900CD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58927D25221C13A100900CD9 /* Main.storyboard in Resources */,
+				58927CE0221BFDDC00900CD9 /* LaunchScreen.storyboard in Resources */,
+				58927CDD221BFDDC00900CD9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58927CCC221BFDDB00900CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58927D13221BFE1F00900CD9 /* MJExtensionConst.m in Sources */,
+				58927D16221BFE1F00900CD9 /* NSString+MJExtension.m in Sources */,
+				58927D14221BFE1F00900CD9 /* NSObject+MJProperty.m in Sources */,
+				58927D21221BFE2800900CD9 /* RootController.m in Sources */,
+				58927D12221BFE1F00900CD9 /* NSObject+MJCoding.m in Sources */,
+				58927D15221BFE1F00900CD9 /* NSObject+MJClass.m in Sources */,
+				58927D1F221BFE2800900CD9 /* ChatController.m in Sources */,
+				58927D0D221BFE1F00900CD9 /* SRWebSocket.m in Sources */,
+				58927D11221BFE1F00900CD9 /* MJProperty.m in Sources */,
+				58927D18221BFE1F00900CD9 /* MJFoundation.m in Sources */,
+				58927D17221BFE1F00900CD9 /* MJPropertyKey.m in Sources */,
+				58927D0F221BFE1F00900CD9 /* MJPropertyType.m in Sources */,
+				58927D0C221BFE1F00900CD9 /* WebRTCHelper.m in Sources */,
+				58927D10221BFE1F00900CD9 /* NSObject+MJKeyValue.m in Sources */,
+				58927CE3221BFDDC00900CD9 /* main.m in Sources */,
+				58927D20221BFE2800900CD9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58927CDE221BFDDC00900CD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58927CDF221BFDDC00900CD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58927CE4221BFDDC00900CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58927CE5221BFDDC00900CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58927CE7221BFDDC00900CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A62QP363D;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RTCDemo/Vendor/WebRTC",
+				);
+				INFOPLIST_FILE = RTCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.youpin.RTCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58927CE8221BFDDC00900CD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7A62QP363D;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RTCDemo/Vendor/WebRTC",
+				);
+				INFOPLIST_FILE = RTCDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.youpin.RTCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58927CCB221BFDDB00900CD9 /* Build configuration list for PBXProject "RTCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58927CE4221BFDDC00900CD9 /* Debug */,
+				58927CE5221BFDDC00900CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58927CE6221BFDDC00900CD9 /* Build configuration list for PBXNativeTarget "RTCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58927CE7221BFDDC00900CD9 /* Debug */,
+				58927CE8221BFDDC00900CD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58927CC8221BFDDB00900CD9 /* Project object */;
+}

@@ -89,7 +89,7 @@ static WebRTCHelper *shareInstance;
  }
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
-    BKLog(@"%@", message);
+    NSLog(@"%@", message);
     NSMutableDictionary *resultDic = [message mj_JSONObject];
     NSString *eventName = resultDic[@"eventName"];
     
@@ -149,7 +149,7 @@ static WebRTCHelper *shareInstance;
 
 /** New ice candidate has been found. */
 - (void)peerConnection:(RTCPeerConnection *)peerConnection didGenerateIceCandidate:(RTCIceCandidate *)candidate {
-    BKLog(@"candidate.sdp:%@ candidate.sdpMid:%@ candidate.sdpMLineIndex:%d candidate.serverUrl:%@", candidate.sdp, candidate.sdpMid, candidate.sdpMLineIndex, candidate.serverUrl);
+    NSLog(@"candidate.sdp:%@ candidate.sdpMid:%@ candidate.sdpMLineIndex:%d candidate.serverUrl:%@", candidate.sdp, candidate.sdpMid, candidate.sdpMLineIndex, candidate.serverUrl);
     /* 把自己的网络地址通过 socket 转发给对端*/
     NSString *connectionID = [self _findConnectionID:peerConnection];
     NSDictionary *dic = @{@"eventName" : @"__ice_candidate",
@@ -228,7 +228,7 @@ static WebRTCHelper *shareInstance;
         [_localStream addAudioTrack:audioTrack];
         
         if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied) { // 摄像头权限
-            BKLog(@"相机访问受限");
+            NSLog(@"相机访问受限");
             if ([_delegate respondsToSelector:@selector(webRTCHelper:setLocalStream:)]) {
                 [_delegate webRTCHelper:self setLocalStream:nil];
             }
@@ -262,7 +262,7 @@ static WebRTCHelper *shareInstance;
                 }
             }
             else {
-                BKLog(@"该设备不能打开摄像头");
+                NSLog(@"该设备不能打开摄像头");
                 if ([_delegate respondsToSelector:@selector(webRTCHelper:setLocalStream:)]) {
                     [_delegate webRTCHelper:self setLocalStream:nil];
                 }
@@ -347,7 +347,7 @@ static WebRTCHelper *shareInstance;
 
 - (void)_addToConnectionIDS:(NSArray <NSString *>*)connections {
      [connections enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        BKLog(@"%@", obj);
+        NSLog(@"%@", obj);
     }];
     [_peerConnectionIDS addObjectsFromArray:connections];
 }
@@ -370,7 +370,7 @@ static WebRTCHelper *shareInstance;
     /** Generate an SDP offer. */
     [connection offerForConstraints:[self _setupForOfferOrAnswerConstraint] completionHandler:^(RTCSessionDescription * _Nullable sdp, NSError * _Nullable error) {
         if (error) {
-            BKLog(@"offerForConstraints error");
+            NSLog(@"offerForConstraints error");
             return;
         }
         
@@ -380,7 +380,7 @@ static WebRTCHelper *shareInstance;
             // A:设置连接本端 SDP
             [connection setLocalDescription:sdp completionHandler:^(NSError * _Nullable error) {
                 if (error) {
-                    BKLog(@"setLocalDescription error");
+                    NSLog(@"setLocalDescription error");
                     return;
                 }
                 
@@ -417,14 +417,14 @@ static WebRTCHelper *shareInstance;
 }
 
 - (void)_didSetSessionDescription:(RTCPeerConnection *)connection {
-    BKLog(@"signalingState:%zd role:%zd", connection.signalingState, _role);
+    NSLog(@"signalingState:%zd role:%zd", connection.signalingState, _role);
     NSString *connectionID = [self _findConnectionID:connection];
 
     if (connection.signalingState == RTCSignalingStateHaveRemoteOffer) { // 新人进入房间就调(远端发起 offer)
         /** Generate an SDP answer. */
         [connection answerForConstraints:[self _setupForOfferOrAnswerConstraint] completionHandler:^(RTCSessionDescription * _Nullable sdp, NSError * _Nullable error) {
             if (error) {
-                BKLog(@"answerForConstraints error");
+                NSLog(@"answerForConstraints error");
                 return;
             }
             
@@ -433,7 +433,7 @@ static WebRTCHelper *shareInstance;
                 // B:设置连接本端 SDP
                 [connection setLocalDescription:sdp completionHandler:^(NSError * _Nullable error) {
                     if (error) {
-                        BKLog(@"setLocalDescription error");
+                        NSLog(@"setLocalDescription error");
                         return;
                     }
                     
@@ -453,7 +453,7 @@ static WebRTCHelper *shareInstance;
                                   };
             
             if (_socket.readyState == SR_OPEN) {
-                BKLog(@"locationSDP:%@", dic);
+                NSLog(@"locationSDP:%@", dic);
                 [_socket send:[dic mj_JSONData]];
             }
         }
@@ -517,7 +517,7 @@ static WebRTCHelper *shareInstance;
         // B:设置连接对端 SDP
         [connection setRemoteDescription:remoteSdp completionHandler:^(NSError * _Nullable error) {
             if (error) {
-                BKLog(@"setRemoteDescription error");
+                NSLog(@"setRemoteDescription error");
             }
             
             [self _didSetSessionDescription:wConnection];
@@ -544,7 +544,7 @@ static WebRTCHelper *shareInstance;
         // A:设置连接对端 SDP
         [connection setRemoteDescription:remoteSdp completionHandler:^(NSError * _Nullable error) {
             if (error) {
-                BKLog(@"setRemoteDescription error");
+                NSLog(@"setRemoteDescription error");
             }
             
             [self _didSetSessionDescription:wConnection];

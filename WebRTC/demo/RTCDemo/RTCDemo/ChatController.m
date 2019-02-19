@@ -37,7 +37,7 @@
 
 #pragma mark - WebRTCHelperDelegate
 - (void)webRTCHelper:(WebRTCHelper *)webRTChelper setLocalStream:(RTCMediaStream *)stream {
-    BKLog(@"");
+    NSLog(@"");
     RTCEAGLVideoView *localView = [[RTCEAGLVideoView alloc] initWithFrame:CGRectMake(0, 20, KVideoWidth, KVideoHeight)];
     // 标记本地摄像头
     [localView setTag:10086];
@@ -49,20 +49,20 @@
 }
 
 - (void)webRTCHelper:(WebRTCHelper *)webRTChelper addRemoteStream:(RTCMediaStream *)stream connectionID:(NSString *)connectionID {
-    BKLog(@"connectionID:%@", connectionID);
+    NSLog(@"connectionID:%@", connectionID);
     [_remoteVideoTracks setObject:[stream.videoTracks lastObject] forKey:connectionID];
     [self _refreshRemoteView];
 }
 
 - (void)webRTCHelper:(WebRTCHelper *)webRTChelper removeConnection:(NSString *)connectionID {
-    BKLog(@"connectionID:%@", connectionID);
+    NSLog(@"connectionID:%@", connectionID);
     [_remoteVideoTracks removeObjectForKey:connectionID];
     [self _refreshRemoteView];
 }
 
 #pragma mark - RTCEAGLVideoViewDelegate
 - (void)videoView:(RTCEAGLVideoView *)videoView didChangeVideoSize:(CGSize)size {
-    BKLog(@"videoView.tag:%zd size:%@", videoView.tag, NSStringFromCGSize(size));
+    NSLog(@"videoView.tag:%zd size:%@", videoView.tag, NSStringFromCGSize(size));
     
     if (size.width > 0 && size.height > 0) {
         // Aspect fill remote video into bounds.

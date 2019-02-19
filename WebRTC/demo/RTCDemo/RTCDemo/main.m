@@ -1,9 +1,9 @@
 //
 //  main.m
-//  BKWebRTC
+//  RTCDemo
 //
-//  Created by Onion on 2017/6/6.
-//  Copyright © 2017年 CloudRoom. All rights reserved.
+//  Created by Onion on 2019/2/19.
+//  Copyright © 2019年 com.youpin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
